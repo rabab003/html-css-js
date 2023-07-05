@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.header {
+    height: 450px;
+    position: relative;
+    width: 100%;
+    background-image: url(/GOPR1386.JPG);
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+}
+
+.header img {
+    width: 100%;
+}
+
+.content {
+    background: #fff;
+    color: #262626;
+    height: 450px;
+    padding-top: 160px;
+    position: relative;
+    width: 100%;
+}
+
+.content h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.content p {
+    padding: 0 150px;
+    line-height: 1.9;
+}
+
+.content::before {
+    position: absolute;
+    content: '';
+    width: 78%;
+    height: 200px;
+    top: -87px;
+    left: 0;
+    background: #fff;
+    transform: skewy(10deg);
+    -webkit-transform: skewy(10deg);
+    -moz-transform: skewy(10deg);
+    -ms-transform: skewy(10deg);
+    -o-transform: skewy(10deg);
+}
+
+.content::after {
+    position: absolute;
+    content: '';
+    width: 60%;
+    height: 125px;
+    top: -40px;
+    right: 0;
+    background: #fff;
+    transform: skewy(-10deg);
+    -webkit-transform: skewy(-10deg);
+    -moz-transform: skewy(-10deg);
+    -ms-transform: skewy(-10deg);
+    -o-transform: skewy(-10deg);
+}
