@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hair-color: #ad6dc5;
+    --skin-color: #f0beaf;
+}
+
+body {
+    background-color: #525252;
+}
+
+.human {
+    margin: 200px auto;
+    background: #414141;
+    width: 220px;
+    height: 220px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hair {
+    background-color: var(--hair-color);
+    width: 120px;
+    height: 170px;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    z-index: 1;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+}
+
+.hair::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: var(--hair-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: -3;
+    box-shadow: 78px 0 0 var(--hair-color);
+}
+
+.face {
+    background-color: var(--skin-color);
+    width: 70px;
+    height: 80px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    z-index: 3;
+    border-radius: 0 0 80px 80px;
+    -webkit-border-radius: 0 0 80px 80px;
+    -moz-border-radius: 0 0 80px 80px;
+    -ms-border-radius: 0 0 80px 80px;
+    -o-border-radius: 0 0 80px 80px;
+}
+
+.face::before {
+    content: '';
+    background-color: var(--hair-color);
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    top: -24px;
+    left: -12px;
+    box-shadow: 38px 2px 0 0px var(--hair-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.eye {
+    background-color: black;
+    width: 12px;
+    height: 10px;
+    position: absolute;
+    top: 27px;
+    left: 8px;
+    box-shadow: 42px 0 0 black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.eye::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -1px;
+    width: 13px;
+    height: 1px;
+    background-color: #626f7d;
+    box-shadow: 42px 0 0 #626f7d;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.nose {
+    background-color: #db9b99;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+  
+}
+
+.mouth {
+    position: absolute;
+    top: 52px;
+    left: 50%;
+    width: 28px;
+    height: 14px;
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+}
+
+.mouth::after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 6px;
+    width: 24px;
+    height: 20px;
+    background-color: #f6828c;
+    border-radius: 50%;
+}
+
+.cheek {
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+    width: 10px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #eba8a8;
+    box-shadow: 48px 0 0 #eba8a8;
+}
+
+.neck {
+    background-color: var(--skin-color);
+    width: 27px;
+    height: 30px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+}
+
+.body {
+    background-color: #555603;
+    width: 98px;
+    height: 80px;
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    border-top-left-radius: 60px;
+}
