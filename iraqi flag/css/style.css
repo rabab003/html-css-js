@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.world {
+    height: 100vh;
+    background-color: #ddd;
+    padding: 50px;
+}
+
+span {
+    display: block;
+    width: 400px;
+    height: 100px;
+    background-color: red;
+}
+
+.all::before {
+    content: "الله اكبر";
+    color: green;
+    font-size: 60px;
+    position: absolute;
+    top: 20px;
+    right: 140px;
+}
+
+span:nth-child(2) {
+    background-color: white;
+    position: relative;
+}
+
+span:nth-child(3) {
+    background-color: black;
+}
