@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/pexels-lilartsy-1111597.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 0 15px;
+    text-align: center;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 40px;
+    backdrop-filter: blur(8px);
+    text-transform: capitalize;
+}
+
+.box .icons {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+    transition: all .9s ease;
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    -o-transition: all .9s ease;
+}
+
+.box .icons i {
+    line-height: 100px;
+    font-size: 40px;
+    color: #333;
+}
+
+.box .text {
+    padding-top: 20px;
+}
+
+.box .text p {
+    padding: 20px;
+    line-height: 2;
+}
+
+.box:hover .icons {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.box .bos {
+    width: 100px;
+    height: 45px;
+    background-color: rgba(43, 43, 43, 0.25);
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    margin: 10px auto;
+}
+
+.box .bos p {
+    align-items: center;
+    padding-top: 10px;
+}
+
+.box .bos:hover {
+    box-shadow: 3px 3px rgb(25, 25, 25);
+    background-color: #fff;
+    color: black;
+}
