@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*start landing section*/
+
+.landing {
+    background: url(/images/new.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.landing .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+}
+
+.landing .text {
+    color: white;
+    text-transform: capitalize;
+    border-radius: 10px;
+    background-color: rgba(21, 21, 21, 0.659);
+    width: 70%;
+    padding: 50px;
+    height: 60%;
+}
+
+.landing .text h1 {
+    font-size: 80px;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.landing .text p {
+    padding: 40px 0;
+}
+
+.landing .text input {
+    padding: 10px;
+    width: 350px;
+}
+
+.landing .text button {
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid rgba(32, 98, 205, 0.751);
+    background-color: blue;
+    width: 100px;
+    color: white;
+    font-size: 18px;
+}
+
+
+/*end landing section*/
+
+
+/* start the second page section*/
+
+.second-page {
+    background-color: rgb(253, 247, 241);
+    padding: 100px 0;
+}
+
+.second-page .text-2 {
+    padding: 5px 0;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.second-page .container {
+    width: 100%;
+}
+
+.second-page .text-2 p {
+    padding: 10px;
+    font-size: 20px
+}
+
+.second-page .text-2 .orang-line {
+    padding: 10px;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    font-size: 45px;
+}
+
+.second-page .orang-line::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    background-color: rgb(193, 155, 52);
+    top: 80px;
+    left: 45%;
+}
+
+.second-page .text-2 p:nth-child(3) {
+    font-size: 18px;
+    padding: 20px 0;
+    line-height: 1.8em;
+}
+
+.second-page .box {
+    display: flex;
+    background: white;
+    width: 90%;
+    margin: 120px auto;
+}
+
+.second-page .box .content {
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.second-page .box .content p:nth-child(1) {
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+.second-page .box .content .orang-line-2 {
+    font-size: 45px;
+    padding: 15px 0;
+    color: rgb(11, 11, 67);
+    position: relative;
+}
+
+.second-page .box .content .orang-line-2::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    background-color: rgb(193, 155, 52);
+    bottom: -15px;
+    left: 0;
+}
+
+.second-page .box .content p:nth-child(3) {
+    padding: 60px 0;
+    line-height: 1.8em;
+    height: 100%;
+}
+
+.second-page .last-boxs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+.second-page .last-boxs .boxs p {
+    background-color: white;
+    padding: 35px;
+}
+
+.second-page .box img {
+    width: 70%;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* end the second page section*/
+
+
+/* start the third page section*/
+
+.third-page {
+    background: rgb(0, 0, 0, .65) url(/images/pexels-tara-winstead-8386440.jpg);
+    background-position: right top;
+    background-size: cover;
+    position: relative;
+    background-blend-mode: darken;
+}
+
+.third-page .container {
+    padding: 100px;
+    text-align: center;
+    z-index: 9999;
+}
+
+.third-page .text-3 {
+    color: white;
+    text-transform: capitalize;
+    width: 60%;
+    margin: auto;
+}
+
+.third-page .text-3 p:nth-child(1) {
+    font-size: 25px;
+}
+
+.third-page .text-3 h2 {
+    padding: 20px;
+    font-size: 45px;
+    position: relative;
+}
+
+.third-page .text-3 h2::after {
+    content: '';
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    background-color: rgb(185, 145, 26);
+    bottom: -10px;
+    right: 42%;
+}
+
+.third-page .text-3 p:nth-child(3) {
+    padding: 40px 0;
+    line-height: 1.5;
+}
+
+
+/* end the third page section*/
+
+
+/* start the fourth page section*/
+
+.fourth-page {
+    background: url(/images/starss.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.fourth-page .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fourth-page .text {
+    color: white;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.fourth-page .text h2 {
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.fourth-page .text address:nth-child(3) {
+    padding: 15px 0;
+}
+
+.fourth-page .text a {
+    text-decoration: none;
+    color: white;
+}
+
+.fourth-page .image {
+    width: 35%;
+}
+
+.fourth-page img {
+    width: 100%;
+}
+
+
+/* end the fourth page section*/
