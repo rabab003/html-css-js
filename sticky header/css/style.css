@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+
+body {
+  background: #000;
+  /* min-height: 200vh; */
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 1000;
+}
+header.sticky {
+  padding: 20px 100px;
+  background: #fff;
+}
+header .logo {
+  position: relative;
+  text-decoration: none;
+  font-size: 2em;
+  letter-spacing: 2px;
+  color:white;
+}
+header .menu {
+font-size: 3em;
+display:none;
+color:white;
+cursor:pointer;
+}
+
+header .close {
+  display: none;
+	position: absolute;
+	top:0rem;
+	right:2rem;
+	cursor: pointer;
+	font-size: 3.5rem;
+	color: red;
+
+}
+
+
+ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+}
+
+ul li a:hover {
+color:#8aafde;
+}
+
+ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+
+.banner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  /* background: url(/e.jpg); */
+   background:linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.6)
+  ),  url(/e.jpg);
+ background-size: cover;
+
+}
+header.sticky .logo,
+header.sticky ul li a,
+header.sticky .menu {
+  color: #000;
+}
+
+p {
+  margin:50px auto;
+  text-align:center;
+  color: white;
+  max-width:80%;
+}
+
+@media screen and (min-width:873px) and (max-width:1042px){
+header ul li a{
+font-size:11px;
+}
+}
+
+
+@media screen and (max-width:862px){
+header .menu{
+  display:block;
+}
+  .logo{
+    font-size:20px;
+  }
+header ul  {
+    position:fixed;
+    top:0; right:-180%;
+    width:20rem;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(50px);
+    transition:.5s;
+    height:100%;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+    z-index:1200;
+    }
+
+header ul li{
+padding:30px;
+}
+
+    header .navbarr.active{
+      right: 0;
+    }
+
+    /* header  .close{
+      display: block;
+      z-index:3000;
+    } */
+
+}
+
+@media screen and (max-width:450px){
+  .logo{
+    font-size:10px;
+  }
+
+}
