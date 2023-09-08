@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&family=Caveat:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,600;0,700;0,800;1,400;1,500;1,700;1,800&family=Foldit:wght@200;400;600&family=Inter:wght@100;200;300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,200;1,400;1,600;1,700&family=Montserrat:wght@400;500;600;700&family=Nunito:ital,wght@0,200;0,400;0,600;0,800;1,200&family=Open+Sans:wght@300;400;700&family=Oswald:wght@300;400;600;700&family=Overpass:wght@400;700&family=Poppins:wght@300;400;500;600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,200&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,900&family=Tilt+Prism&family=Work+Sans:ital,wght@0,200;0,300;0,500;1,100;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background: #141519;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.card {
+  max-width: 370px;
+  background: #1b222c;
+  color: #fff;
+  padding: 34px;
+  border-radius: 16px;
+  margin: 20px;
+}
+.card h1 {
+  padding-top: 25px;
+}
+
+.card .starTop {
+  background: hsl(213, 19%, 18%);
+  padding: 14px;
+  width: 16%;
+  border-radius: 50%;
+}
+.card .text {
+  text-align: center;
+}
+.card .text p {
+  padding: 10px 2px;
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+}
+
+.card .stars {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.card .stars i {
+  background: hsl(213, 19%, 18%);
+  padding: 15px 22px;
+  border-radius: 50%;
+  color: hsl(216, 12%, 54%);
+  cursor: pointer;
+  transition: 0.5s;
+  font-style: normal;
+}
+.card .stars i:hover {
+  background: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+.stars i.active {
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+button {
+  width: 100%;
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 30px;
+  margin-top: 2em;
+  font-size: 17px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.hidden {
+  display: none;
+}
+
+.two {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  position: relative;
+}
+
+.two span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  padding: 10px 16px;
+  cursor: pointer;
+  background: hsl(213, 19%, 18%);
+}
+
+.card .two .check {
+  margin-top: 44px;
+}
+
+.card .two .thanck-you {
+  margin-top: 30px;
+  background: hsl(213, 19%, 18%);
+  padding: 10px 22px;
+  border-radius: 20px;
+  color: hsl(25, 97%, 53%);
+}
