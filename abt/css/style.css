@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&family=Caveat:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,600;0,700;0,800;1,400;1,500;1,700;1,800&family=Foldit:wght@200;400;600&family=Inter:wght@100;200;300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,200;1,400;1,600;1,700&family=Montserrat:wght@400;500;600;700&family=Nunito:ital,wght@0,200;0,400;0,600;0,800;1,200&family=Open+Sans:wght@300;400;700&family=Oswald:wght@300;400;600;700&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Poppins:wght@300;400;500;600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,200&family=Roboto:ital,wght@0,300;0,400;0,500;1,900&family=Tilt+Prism&family=Work+Sans:ital,wght@0,200;0,300;0,500;1,100;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+img {
+  border-radius: 50%;
+}
+main {
+  height: 100vh;
+  overflow: hidden;
+}
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #546464ab;
+  top: -50px;
+  right: -200px;
+  transform: rotate(45deg);
+}
+.main::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #cc7777b3;
+  bottom: -240px;
+  right: 80px;
+  z-index: -300;
+  transform: rotate(30deg);
+  border-radius: 50%;
+}
+.main .image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.main .image img {
+  height: 100%;
+}
+.main .image::before {
+  content: ""; /* The content property is required even if it's empty */
+  display: block; /* Make the pseudo-element a block element */
+  width: 500px; /* Adjust the size of the circle */
+  height: 500px; /* Adjust the size of the circle */
+  background-color: #546464; /* Set the background color to orange */
+  border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+  position: absolute; /* Position it absolutely within the container */
+  top: -40px; /* Adjust the top position */
+  right: 20px; /* Adjust the right position */
+  z-index: -30;
+}
+.main .text {
+  width: 50%;
+}
+.main .text h1 {
+  font-size: 80px;
+  position: relative;
+  padding: 20px 2px;
+}
+.main .text h1::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 6px;
+  background: #546464;
+  bottom: -16px;
+  border-radius: 4px;
+  left: 0;
+}
+.main .text p {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  line-height: 1.9;
+  letter-spacing: 0.7px;
+  width: 70%;
+}
+.main .text button {
+  background: #546464;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
